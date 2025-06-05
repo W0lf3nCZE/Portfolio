@@ -1,0 +1,104 @@
+html {
+	scroll-behavior: smooth;}
+  /* Firefox */
+  * {scrollbar-width: auto;
+     scrollbar-color: #f7c682 #825855;}
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;}
+  *::-webkit-scrollbar-track {
+    background: #825855;}
+  *::-webkit-scrollbar-thumb {
+    background-color: #f7c682;
+    border-radius: 20px;
+    border: 8px double #c2b3b3;}
+
+    
+body{
+  margin: 0; padding: 0;
+  background-color: whitesmoke}
+
+header{/* This is for logo home-button */
+  width: 5%;
+  height: 6em;
+  position: absolute;
+  justify-content: center;
+  margin:2% 0 0 46.5%;
+  align-items: center;}
+  #home{
+    z-index:100;
+    border-radius: 100%;
+    position: absolute;
+    width: 100%;
+    height: 0;}
+    #logo{
+      width: 7em;
+      height: auto;
+      transition: ease-in-out 0.65s;
+      display: inline-block;
+      pointer-events:all;
+      background-color: rgba(80, 120, 150, 0.5);
+      border-radius: 100%;
+      padding: 1.5%;}
+      #logo:hover{
+      width: 9em;
+      margin-left: -1em;
+      padding: 6%;}
+
+nav{/* Main */
+  width: 100%; height:100%;}
+  .portfsel {/* Main, structures of thirds */
+    width: 33.3%;
+    height: 100vh;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    background-color:chocolate;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease;}
+    .portfsel::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      filter: blur(0);
+      transition: filter 1s ease;
+      z-index: 0;}
+      .hoverclick{/* Hover for each third */
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      position: absolute;}
+  .portftitle {
+    text-align: center;
+    width: 70%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-size: 3em;
+    color: beige;
+    text-shadow: 1px 5px 1px black;
+    padding: 15px;
+    margin: 68% 0 0 12.5%;
+    background-color: rgba(185, 155, 142, 0.5);
+    position: relative;
+    z-index: 1;
+    border-radius: 12%;
+    float: left;
+    text-decoration: underline;}
+
+  #write::before {background-image: url(../gallery/pexels-guiirossi-2553427.jpg);}
+  #art::before {background-image: url(../gallery/paintbrushes-4037763.jpg);}
+  #photo::before {background-image: url(../gallery/tower-6521842.jpg);}
+
+  .portfsel:hover::before {filter: blur(8px); /* Apply blur effect */}
+  .portfsel:hover .portftitle{/* Bold text when hovering over portfsel */
+    font-weight: bold;
+    transition: all .3s linear;}

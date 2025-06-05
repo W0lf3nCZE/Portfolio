@@ -1,0 +1,153 @@
+html {
+	scroll-behavior: smooth;}
+  /* Firefox */
+  * {scrollbar-width: auto;
+     scrollbar-color: #f7c682 #825855;}
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;}
+  *::-webkit-scrollbar-track {
+    background: #825855;}
+  *::-webkit-scrollbar-thumb {
+    background-color: #f7c682;
+    border-radius: 20px;
+    border: 8px double #c2b3b3;}
+
+body{
+  margin: 0 6em 0 8em; padding: 0;
+        background-color:#362a29;
+  /*background-color: wheat;*/}
+
+header{/* This is for logo home-button */
+  width: 100%;
+  height: 23em;}
+  header a{
+    text-decoration: none;
+    color: inherit;
+    width: 15em;
+    height: 10em;
+    cursor:default;}
+  #home{
+    width: 75%;
+    height: 22.5%;
+    float: left;
+    margin-bottom: 20em;}
+    #logo{
+      width: 13em;
+      height: auto;
+      transition: ease-in-out 0.65s;
+      pointer-events:all;
+      background-color: rgb(224, 153, 83);
+      border-radius: 100%;
+      padding: 0.2em;
+      margin: 6em 0 0 0em;
+      float: left;}
+      #logo:hover{
+        rotate: -360deg;
+      transition: ease-in-out 1.565s;
+      }
+      /*
+      #logo:hover{
+      width: 15em;
+      margin-top: -1em;
+      padding: 0.3em;}
+      */
+      #title{
+        font-family:serif;
+        font-size: 10em;
+        font-weight: bold;
+          color: rgb(255, 232, 199); 
+        /*color:#674e4c;*/
+        margin: 0.65em 0 0 1.5em;
+        line-height: 1.2em;
+        letter-spacing: 0em;
+        text-transform: uppercase;
+        text-decoration: underline;
+        transition: ease-in-out 0.65s;
+        text-shadow: 3px 3px 3px #4b4643;}
+        #title:hover{
+          color: #e6a448;
+          text-shadow: 2px 2px 4px #47300c;
+          padding: 0.01em;
+          letter-spacing: 0.05em;
+        transition: ease-in-out 12s;}
+      /*#title:hover{
+          color: #f7c682;
+          text-shadow: 2px 2px 4px #825855;
+          padding: 0.1em;}
+          #title:active{
+            color: #825855;
+            text-shadow: 2px 2px 4px #f7c682;}
+            #title:visited{
+              color: #825855;
+              text-shadow: 2px 2px 4px #f7c682;}*/
+
+nav{/* Main */
+  width: 100%; height:30em;
+  margin-left: 3.5em;
+}
+.block{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:1em
+}
+.upper{
+  z-index: 15;
+}
+#first{
+  width: 60%;
+  height:12em;
+}
+#first .upper{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: oblique;
+  color: #000000;
+  text-align: left;
+  line-height: 1.2em;
+  width: fit-content;
+  background-color: #f7c682;
+  position: relative;
+  border-radius: 35%;
+  padding: 0.65em;
+  box-shadow: 0.2em 0.2em rgb(127, 87, 47);
+  font-size: 1.8em;
+  margin-bottom: -1.8em;
+  font-weight: bold;
+  margin-top: 2em;
+}
+#first .upper:hover{
+  color: #775006;
+  text-shadow: 0.01em 0.01em 0.1em #2c1706;
+  text-shadow: 0.01em 0.01em 1em #f8780031;
+  padding: 0.65em;
+  box-shadow: 0.2em 0.2em rgb(86, 52, 19);
+  background-color: bisque;
+}
+#first .lower{
+  color: #000000;
+  text-align: left;
+  line-height: 1.2em;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.65em;
+  box-shadow: 0.2em 0.2em rgb(127, 87, 47);
+  background-color: rgb(203, 152, 101);
+  border-radius: 12%;
+  padding: 1.5em;
+  text-indent: 1.27cm;
+}
+#stray1{
+          color: #f7c682; 
+  text-align: left;
+  line-height: 1.2em;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.65em;
+  border-radius: 12%;
+  padding: 1.5em;
+  font-style: italic;
+  margin: 5.5em 0 0 18em;
+}
